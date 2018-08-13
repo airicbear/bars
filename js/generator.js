@@ -2,7 +2,7 @@ let myNumberInput = document.createElement("input");
 myNumberInput.setAttribute("type", "number");
 
 let myNumberInputSubmitBtn = document.createElement("button");
-myNumberInputSubmitBtn.innerHTML = "Set number of people";
+myNumberInputSubmitBtn.innerHTML = "Set number of labels";
 
 function newRow(name, slider, percent) {
   let row = document.createElement("div");
