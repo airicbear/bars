@@ -19,7 +19,22 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <script src="./js/generator.js" async defer></script>
+  <form id="numLabelsForm">
+    <input type="number" id="numLabels">
+    <button id="setNumLabels">Set number of labels</button>  
+  </form>
+  <script src="./js/bars.js" async defer></script>
+  <script>
+    function main() {
+      let editorForm = document.getElementById("numLabelsForm");
+      editorForm.addEventListener("submit", event => {
+        event.preventDefault();
+        generateEditor("numLabels");
+      });
+    }
+
+    main();
+  </script>
 </body>
 
 </html>
